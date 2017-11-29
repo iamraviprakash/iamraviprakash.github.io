@@ -1,0 +1,108 @@
+        #segment-5, #segment-2, #segment-3{
+            font-family: 'Open Sans Condensed', sans-serif;
+            font-size: 1.4em;
+        }
+        .container-fluid{
+          padding: 0;
+        }
+        #segment-1{
+            background: url('../img/first.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .row{
+            margin: 0;
+            min-height: 100vh;
+            width: 100%;
+        }
+        #segment-2 .row{
+            min-height: 80vh;
+        }
+        #image-section img{
+            border-radius: 70px;
+            border: 2px solid white;
+            box-shadow: 0px 10px 6px -6px grey;
+            margin: auto;
+            display: table;
+            margin-top: 100px;
+        }
+        #image-section div{
+            display: table;
+            margin: auto;
+            margin-top: 20px;
+        }
+        #segment-2 .col-md-6{
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        table{
+            margin:auto;
+            font-size: 1em;
+        }
+        td{
+            padding: 10px; 
+        }
+        #segment-2 .col-md-6{
+            text-align: center;
+        }
+
+        .col-md-6 p{
+           padding-left: 7vw;
+           padding-right: 7vw;
+           margin: 0;
+        }
+
+
+
+
+        #segment-3{
+            background: url('../img/experience.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        #segment-3 .row{
+            background: rgba(111, 122, 137,0.8);
+        }
+        #segment-3-heading, #segment-3-content{
+            width: 100%;
+        }
+        #segment-3-text{
+            min-height: 70vh;
+        }
+        #segment-3-content{
+            margin-top: 50px;
+        }
+        #segment-3-heading div, #segment-3-content div{
+            display: table;
+            margin: auto;
+            color: white;
+            font-weight: bold;
+            font-size: 2em;
+        }
+        #segment-3-content div{
+            padding: 10px;
+            text-align: center;
+            font-weight: normal;
+            margin-bottom: 30px;
+            font-size: 1.5em;
+        }
+        #segment-3-content span{
+            font-size: 0.8em;
+        }
+        #segment-3 .triangle-topright{
+            margin-top: -2px;
+            width: 0;
+            height: 0;
+            float: right;
+            border-top: 25vh solid white;
+            border-left: 100vw solid transparent;
+        }
+        #segment-3 .triangle-bottomleft {
+            width: 0;
+            height: 0;
+            margin-bottom: -2px;
+            float: left;
+            border-bottom: 25vh solid white;
+            border-right: 100vw solid transparent;
+        }
+        
