@@ -47,8 +47,8 @@
         }
 
         .col-md-6 p{
-           padding-left: 7vw;
-           padding-right: 7vw;
+           padding-left: 5vw;
+           padding-right: 5vw;
            margin: 0;
         }
 
@@ -66,6 +66,10 @@
         #segment-3-heading, #segment-3-content{
             width: 100%;
         }
+        #segment-1 .row{
+            
+        }
+        
         #segment-3-text{
             min-height: 70vh;
         }
