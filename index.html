@@ -14,22 +14,7 @@
     <link href="css/style.css" rel="stylesheet">
     
     <style>
-        #quote-text{
-            float: right;
-            color: #07405c;
-            font-family: 'Raleway', sans-serif;
-        }
-        #quote-text #part-1{
-            font-size: 3.5em;
-            font-weight: bold;
-        }
-        #quote-text #part-2{
-            font-size: 5em;
-            
-        }
-        #quote-text #part-3{
-            font-size: 2em;
-        }
+        
         #segment-5 .triangle-topleft{
             width: 0;
             height: 0;
@@ -49,24 +34,20 @@
             color: white;
         }
         #segment-5 .col-md-4{
-            margin-top: 4.5vh;
-            margin-bottom: 4.5vh;
+            margin-top: 40px;
+            margin-bottom: 40px;
             padding-left: 4vw;
             padding-right: 4vw;
             text-align: center;
+            font-size: 0.85em;
         }
-        #segment-5 #content-heading{
-            margin: auto;
-            font-size: 2em;
-            font-weight: bold;
-            display: table;
+        
+        #segment-5 .heading{
             margin-bottom: 10vh;
         }
-        .cards{
-            box-shadow: 1px 1px
-        }
         .material-icons{
-            font-size: 7vh;
+            font-size: 35px;
+            
         }
         .col-md-4:hover .material-icons{
             box-shadow: 0px 10px 6px -6px white;
@@ -77,18 +58,171 @@
             border-radius: 50%;
             margin-right: 5px;
         }
-        table button{
-            border-width: 0;
-            background: #0c71a3;
-            color: white;
-            width:200px;
-            border-radius: 2px;
-            height: 40px;
-        }
+        
+        
+        
+        
+        
+        
+        
         button:hover {
             box-shadow: 0px 10px 6px -6px grey;
         }
-    </style><link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+        .cards{
+            display:none;
+            width: 80vw;
+            height: 110px;
+            border: 1px solid lightgrey;
+            box-shadow: 0px 10px 6px -6px grey;
+            border-radius: 2px;
+            margin: auto;
+            padding: 3vh 10vw 3vh 10vw ;
+            font-size: 0.55em;
+            
+        }
+        
+        #slides{
+            margin-top: 20px;
+            margin-bottom: 60px;
+        }
+        #segment-4 .heading{
+            margin-top: 60px;
+            color: gray;
+        }
+        #left-control, #right-control{
+            background: none;
+            margin-bottom: 80px;
+            border: 2px solid grey;
+            min-height: 40px;
+            min-width: 40px;
+            height: 8vh;
+            width: 8vh;
+            border-radius: 50%;
+            color: grey;
+        }
+        #left-control:hover, #right-control:hover{
+            box-shadow: 0px 10px 6px -6px grey;
+            border: 2px solid white;
+        }
+        #left-control{
+            margin-right: 5vw;
+        }
+        
+        
+        @media screen and (min-width: 500px) {
+            .cards{
+                 width:65vw;
+                 font-size: 0.6em;
+                height: 120px;
+            }
+            .heading{
+                font-size: 1.5em;
+            }
+            #segment-3-content div{
+                font-size: 1.1em;
+            }
+            #segment-3-content span{
+                font-size: 0.8em;
+            }
+            #segment-2 .row{
+               font-size: 0.9em;
+            }
+            table{
+                font-size: 0.9em;
+            }
+            
+        }
+        @media screen and (min-width: 750px) {
+            .cards{
+                 width:60vw;
+                font-size: 0.65em;
+                height: 130px;
+            }
+            .heading{
+                font-size: 1.6em;
+            }
+            #segment-3-content div{
+                font-size: 1.2em;
+            }
+            #segment-3-content span{
+                font-size: 0.85em;
+            }
+            #segment-2 .row{
+               font-size: 0.95em;
+            }
+            table{
+                font-size: 0.9em;
+            }
+            #segment-2 img{
+                width:125px;
+            }
+            #quote-text{
+                text-align: center;
+                float: none;
+                font-size: 1em;
+            }
+        }
+        @media screen and (min-width: 950px) {
+            .cards{
+                 width:55vw;
+                font-size: 0.7em;
+                height: 140px;
+            }
+            .heading{
+                font-size: 1.75em;
+            }
+            #segment-3-content div{
+                font-size: 1.3em;
+            }
+            #segment-3-content span{
+                font-size: 0.9em;
+            }
+            #segment-2 .row{
+               font-size: 1em;
+            }
+            table{
+                font-size: 1.0em;
+            }
+            #quote-text{
+                text-align: left;
+                float: right;
+                font-size: 1.1em;
+            }
+        }
+        @media screen and (min-width: 1200px) {
+            .cards{
+                width:55vw;
+                font-size: 0.8em;
+                height: 150px;
+            }
+            .heading{
+                font-size: 2em;
+            }
+            #segment-3-content div{
+                font-size: 1.5em;
+            }
+            #segment-3-content span{
+                font-size: 0.9em;
+            }
+            #segment-5 .col-md-4{
+                font-size: 1em;
+            }
+            .material-icons{
+                font-size: 40px;
+            }
+            #segment-2 .row{
+               font-size: 1.05em;
+            }
+            table{
+                font-size: 1.0em;
+            }
+            #segment-2 img{
+                width:140px;
+            }
+        }
+        
+        
+    </style>
 
 </head>
     <body>
@@ -121,7 +255,7 @@
         <div class="container-fluid" id="segment-2">
             <div class="row">
                 <div id="image-section">
-                    <img id="profile-image" src="img/profile.jpg" width="140">
+                    <img id="profile-image" src="img/profile.jpg" width="110">
                     <div style="font-weight: bold;font-size: 1.2em;">RAVI PRAKASH</div>
                     <div>Website Developer | Interested In Network & Security</div>
                     <hr style="width:40%;">
@@ -170,7 +304,7 @@
                     </div>
                     <div class="col-md-6">
                         <p>
-                            Hi, my name is Ravi Prakash. I'm 20 years old multi-talented from Bihar, India. In 20 years I realized that everything is impossible until we try. And it also made me believe that at the end of the day everything is in your favor. 
+                            Hi, my name is Ravi Prakash. I'm 20 years old multi-talented from Bihar, India. In these 20 years, I realized that everything is impossible until we try. And it also made me believe that at the end of the day everything is in your favor. 
                             <br>
                             <br>
                             As Gita says -
@@ -197,8 +331,8 @@
             <div class="row">
               <div class="triangle-topright"></div>
                 <div id="segment-3-text">
-                    <div id="segment-3-heading">
-                        <div>TURNING POINTS</div>
+                    <div class="heading">
+                        <span>TURNING POINTS</span>
                     </div>
                     <div id="segment-3-content">
                         <div>
@@ -245,12 +379,50 @@
         
         
         <div class="container-fluid" id="segment-4">
-            <div class="row">   
-                <div style="min-height: 85vh;">
-                    <div class="cards">
-                    
+            <div class="row" style="min-height: 60vh;">   
+                <div style="text-align: center;">
+                    <div class="heading">
+                        <span>WHAT OTHERS SAY</span>
+                        <hr style="width:100%;">
                     </div>
+                    
+                    <div id="slides">
+                        
+                         <div class="cards">
+                            This is a sample text. This is a sample text. This is a sample text. This is a sample text. This is a sample text. This is a sample text. This is a sample text.This is a sample text. This is a sample text.
+                         </div>
+                        
+                         <div class="cards">
+                            b
+                         </div>
+                        
+                    </div>
+                    <button id="left-control" onclick="plusSlides(-1)"><i class="material-icons">keyboard_arrow_left</i></button><button id="right-control" onclick="plusSlides(1)"><i class="material-icons">keyboard_arrow_right</i></button>
                 </div>
+                <script>
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+
+                    function plusSlides(n) {
+                      showSlides(slideIndex += n);
+                    }
+
+                    function currentSlide(n) {
+                      showSlides(slideIndex = n);
+                    }
+
+                    function showSlides(n) {
+                      var i;
+                      var slides = document.getElementsByClassName("cards");
+                      if (n > slides.length) {slideIndex = 1}    
+                      if (n < 1) {slideIndex = slides.length}
+                      for (i = 0; i < slides.length; i++) {
+                          slides[i].style.display = "none";  
+                      }
+                      slides[slideIndex-1].style.display = "inline-block";  
+                    }
+                </script>
+
             </div>
         </div>
         
@@ -263,8 +435,8 @@
         <div class="container-fluid" id="segment-5">
             <div class="row">
                 <div class="triangle-topleft"></div>
-                <div id="content-heading">
-                    GET IN TOUCH
+                <div class="heading">
+                    <span>GET IN TOUCH</span>
                 <hr style="width:100%;">
                 </div>
                 
