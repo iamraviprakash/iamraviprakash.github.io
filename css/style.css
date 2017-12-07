@@ -110,7 +110,7 @@
             color: white;
         }
         #segment-3 .row{
-            background: rgba(111, 122, 137,0.8);
+            background: linear-gradient(to left, rgba(111, 122, 137,0.8) , rgba(12,113,163,0.8));
         }
         #segment-3-text{
             min-height: 70vh;
