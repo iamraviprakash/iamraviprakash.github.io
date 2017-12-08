@@ -6,16 +6,8 @@
           padding: 0;
         }
         @font-face {
-            font-family: noelan;
-            src: url('../font/noelanScript.otf');
-        }
-        @font-face {
             font-family: wildyouth;
             src: url('../font/WildYouth-Regular.otf');
-        }
-        @font-face {
-            font-family: haydon;
-            src: url('../font/HaydonBrush_PERSONAL_USE.ttf');
         }
     
         .heading{
