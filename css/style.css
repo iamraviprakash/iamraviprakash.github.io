@@ -5,20 +5,31 @@
         .container-fluid{
           padding: 0;
         }
+        @font-face {
+            font-family: noelan;
+            src: url('../font/noelanScript.otf');
+        }
+        @font-face {
+            font-family: wildyouth;
+            src: url('../font/WildYouth-Regular.otf');
+        }
+        @font-face {
+            font-family: haydon;
+            src: url('../font/HaydonBrush_PERSONAL_USE.ttf');
+        }
+    
         .heading{
             margin: auto;
             font-size: 1.4em;
             font-weight: bold;
             display: table;
-            
         }
         .row{
             margin: 0;
             min-height: 100vh;
             width: 100%;
         }
-
-
+        
 
 
 
@@ -31,7 +42,8 @@
             float: left;
             color: #07405c;
             font-family: 'Raleway', sans-serif;
-            font-size: 0.85em;
+            font-family: wildyouth;
+            font-size: 1em;
         }
         #quote-text #part-1{
             font-size: 3.5em;
@@ -106,6 +118,7 @@
         #segment-3{
             background: url('../img/experience.jpg');
             background-size: cover;
+            background-attachment: fixed;
             background-position: center;
             color: white;
         }

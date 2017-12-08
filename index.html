@@ -21,10 +21,11 @@
             margin-top: -2px;
             border-top: 25vh solid white;
             border-right: 100vw solid transparent;
-            margin-bottom: 10vh;
+            margin-bottom: 5vh;
         }
         #segment-5{
             background: url(img/contact.jpg);
+            background-attachment: fixed;
             background-size: cover;
             background-position: center;
         }
@@ -41,10 +42,6 @@
             text-align: center;
             font-size: 0.85em;
         }
-        
-        #segment-5 .heading{
-            margin-bottom: 10vh;
-        }
         .material-icons{
             font-size: 35px;
             
@@ -58,7 +55,17 @@
             border-radius: 50%;
             margin-right: 5px;
         }
-        
+        #segment-5 .heading{
+            margin-bottom: 10vh;
+        }
+        #segment-5 .heading + div{
+            color: white;
+            font-size: 1.5em;
+            display: table;
+            margin: auto;
+            text-align: center;
+            margin-bottom: 10vh;
+        }
         
         
         
@@ -94,8 +101,9 @@
         #left-control, #right-control{
             background: none;
             margin-bottom: 80px;
-            border: 2px solid grey;
-            min-height: 40px;
+            border: 2px solid  grey;
+            min-height: 40pxfont-family: wildyouth;
+            font-weight: bold;;
             min-width: 40px;
             height: 8vh;
             width: 8vh;
@@ -131,7 +139,8 @@
             }
             table{
                 font-size: 0.9em;
-            }
+            }font-family: wildyouth;
+            font-weight: bold;
             
         }
         @media screen and (min-width: 750px) {
@@ -161,7 +170,7 @@
             #quote-text{
                 text-align: center;
                 float: none;
-                font-size: 1em;
+                font-size: 1.2em;
             }
         }
         @media screen and (min-width: 950px) {
@@ -188,7 +197,7 @@
             #quote-text{
                 text-align: left;
                 float: right;
-                font-size: 1.1em;
+                font-size: 1.3em;
             }
         }
         @media screen and (min-width: 1200px) {
@@ -236,13 +245,13 @@
                 </div>
                 <div style="min-height: 50vh;">
                     <div id="quote-text">
-                        <div id="part-1">I AM</div>
+                        <div id="part-1">I am</div>
                         <div id="part-2">
-                            <b>RAVI</b> PRAKASH
+                            <b>Ravi</b> Prakash
                         </div>
                         <div id="part-3">
-                            AND I <b>LOVE</b>
-                            WHAT I <b>DO.</b>
+                            And I <b>Love</b>
+                            What I <b>Do.</b>
                         </div>
                     </div>
                 </div>
@@ -385,26 +394,32 @@
                 <div style="text-align: center;">
                     <div class="heading">
                         <span>WHAT OTHERS SAY</span>
-                        <hr style="width:100%;">
                     </div>
+                    <div style="margin-top: 40px; background-color: lightgrey; height: 1px; width: 30%;display: inline-block;"></div>
                     <div id="slides">
                         
                          <div class="cards">
                             <div>This is a sample text. This is a sample text. This is a sample text. This is a sample text. This is a sample text. This is a sample text. This is a sample text.This is a sample text. <br><br>- This is a sample 
                             text.</div>
-                             <div>
+                            <!-- <div>
                                  <br>
                              <i class="material-icons" style="color: #0c71a3;">mouse</i> <i class="material-icons" style="color: #0c71a3;">mouse</i> <i class="material-icons" style="color: #0c71a3;">mouse</i> <i class="material-icons" style="color: lightgrey;">mouse</i> <i class="material-icons" style="color: lightgrey;">mouse</i> 
-                             </div>
+                             </div>-->
+                             <br>
+                             <br>
+                             <div style="background-color: #0c71a3; height: 2px; width: 40%;display: inline-block;"></div>
                          </div>
                         
                          <div class="cards">
                             <div>This is a sample text. This is a sample text. This is a sample text. This is a sample text. This is a sample text. This is a sample text. This is a sample text.This is a sample text. <br><br>- This is a sample 
                             text.</div>
-                             <div>
+                            <!-- <div>
                                  <br>
-                             <i class="material-icons" style="color: #0c71a3;">mouse</i> <i class="material-icons" style="color: #0c71a3;">mouse</i> <i class="material-icons" style="color: #0c71a3;">mouse</i> <i class="material-icons" style="color: #0c71a3;">mouse</i> <i class="material-icons" style="color: lightgrey;">mouse</i> 
-                             </div>
+                             <i class="material-icons" style="color: #0c71a3;">mouse</i> <i class="material-icons" style="color: #0c71a3;">mouse</i> <i class="material-icons" style="color: #0c71a3;">mouse</i> <i class="material-icons" style="color: lightgrey;">mouse</i> <i class="material-icons" style="color: lightgrey;">mouse</i> 
+                             </div>-->
+                             <br>
+                             <br>
+                             <div style="background-color: #0c71a3; height: 2px; width: 40%;display: inline-block;"></div>
                          </div>
                         
                     </div>
@@ -448,9 +463,14 @@
                 <div class="triangle-topleft"></div>
                 <div class="heading">
                     <span>GET IN TOUCH</span>
-                <hr style="width:100%;">
                 </div>
-                
+                <div>
+                    It was an "Awesome" journey. Wasn't it?<br>
+						So ping me if you want to get more details.
+                </div>
+                <hr style="width:60%;">
+                <br>
+                <br>
                 <div class="col-md-4">
                     <i class="material-icons">location_on</i>
                     <br>
