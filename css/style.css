@@ -59,10 +59,10 @@
         #quote-text{
             margin-right: 2.5vw;
             margin-top: 5vh;
-            color: white;
+            color: #F8F8F8;
             font-family: 'Raleway', sans-serif;
             font-family: wildyouth;
-            padding:20px; 
+            padding:5px; 
             background: linear-gradient(to left, rgba(111, 122, 137,0.5) , rgba(12,113,163,0.5));
         }
         #quote-text #part-1{
