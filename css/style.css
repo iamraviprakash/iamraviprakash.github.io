@@ -49,27 +49,31 @@
 
 
         #segment-1{
-            background: url('../img/first.jpg');
+            background: url('../img/top.jpg');
             background-size: cover;
             background-position: center;
         }
+        #segment-1 .row{
+            padding: 3vh 3vw 3vh 3vw;
+        }
         #quote-text{
-            float: left;
-            color: #07405c;
+            margin-right: 2.5vw;
+            margin-top: 5vh;
+            color: white;
             font-family: 'Raleway', sans-serif;
             font-family: wildyouth;
-            font-size: 1em;
+            padding:20px; 
+            background: linear-gradient(to left, rgba(111, 122, 137,0.5) , rgba(12,113,163,0.5));
         }
         #quote-text #part-1{
-            font-size: 3.5em;
+            font-size: 3em;
             font-weight: bold;
         }
         #quote-text #part-2{
-            font-size: 5em;
-            
+            font-size: 4em;
         }
         #quote-text #part-3{
-            font-size: 2em;
+            font-size: 1.5em;
         }
 
 
