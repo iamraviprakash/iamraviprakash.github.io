@@ -9,19 +9,42 @@
             font-family: wildyouth;
             src: url('../font/WildYouth-Regular.otf');
         }
-    
+        @font-face {
+            font-family: test;
+            src: url('../font/BackToBlackBoldDemo.ttf');
+        }
         .heading{
             margin: auto;
-            font-size: 1.4em;
-            font-weight: bold;
             display: table;
+            padding: 10px 20px 10px 20px;
+        }
+        .heading span:nth-child(1){
+            
+            font-family: test;
+            font-size: 1.5em;
+        }
+        .heading span:nth-child(2){
+            font-size: 1.5em;
         }
         .row{
             margin: 0;
-            min-height: 100vh;
             width: 100%;
         }
-        
+        .triangle-topleft{
+            width: 0;
+            height: 0;
+            margin-top: -2px;
+            border-top: 25vh solid white;
+            border-right: 98vw solid transparent;
+            margin-bottom: 5vh;
+        }
+        .triangle-bottomright {
+            margin-bottom: -1px;
+            height: 0;
+            float: right;
+            border-bottom: 25vh solid white;
+            border-left: 98vw solid transparent;
+        }  
 
 
 
@@ -81,12 +104,21 @@
             font-size: 0.8em;
         }
         table button{
-            border-width: 0;
-            background: #0c71a3;
-            color: white;
+            border: 2px solid #0c71a3;
+            background: white;
+            color: #0c71a3;
             width:200px;
             border-radius: 2px;
             height: 40px;
+            font-weight: bold;
+            transition: background 0.5s, color 0.5s;
+            -webkit-transition: background 0.5s, color 0.5s;
+        }
+        button:hover {
+            border-width: 0px;
+            background: #0c71a3;
+            color: white;
+            box-shadow: 0px 10px 6px -6px lightgrey;
         }
         td{
             padding: 10px; 
@@ -114,12 +146,6 @@
             background-position: center;
             color: white;
         }
-        #segment-3 .row{
-            background: linear-gradient(to left, rgba(111, 122, 137,0.9) , rgba(12,113,163,0.9));
-        }
-        #segment-3-text{
-            min-height: 70vh;
-        }
         #segment-3-content{
             margin-top: 50px;
             width: 100%;
@@ -140,16 +166,65 @@
             height: 0;
             float: right;
             border-top: 25vh solid white;
-            border-left: 100vw solid transparent;
+            border-left: 98vw solid transparent;
         }
         #segment-3 .triangle-bottomleft {
-            width: 0;
+            margin-bottom: -1px;
             height: 0;
-            margin-bottom: -2px;
             float: left;
             border-bottom: 25vh solid white;
-            border-right: 100vw solid transparent;
+            border-right: 98vw solid transparent;
         }
+        #segment-3-2{
+            color: #0c71a3;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+        #segment-3-2 .small-box{
+            display: table;
+            font-size: 1.4em;
+            margin: auto;
+            height: 80px;
+            width: 80px; 
+            border:2px solid white;
+            color: white;
+            background: #0c71a3;
+            border-radius: 50%;
+            box-shadow: 0px 0px 10px 2px #0c71a3;
+        }
+        #segment-3-2 .large-box{
+            display: inline-block;
+            font-size: 1.2em;
+            padding:20px; 
+            border:2px solid #0c71a3;
+           
+        }
+        
+        
         
 
 
+        #segment-4{
+            background: url("../img/segment4.jpg");
+            color: white;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        #segment-4-2{
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+        #segment-3 .heading, #segment-4 .heading{
+            background: linear-gradient(to left, rgba(111, 122, 137,0.7) , rgba(12,113,163,0.7));
+        }
+        #segment-3 .row, #segment-4 .row{
+            text-align: center;
+        }
+        .heading-border{
+            padding:10px; 
+            border:2px solid rgba(111, 122, 137,0.7); 
+            display: inline-block;
+        }

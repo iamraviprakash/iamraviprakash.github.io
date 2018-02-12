@@ -3,6 +3,7 @@
     <title>Ravi Prakash</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -15,14 +16,7 @@
     
     <style>
         
-        #segment-5 .triangle-topleft{
-            width: 0;
-            height: 0;
-            margin-top: -2px;
-            border-top: 25vh solid white;
-            border-right: 100vw solid transparent;
-            margin-bottom: 5vh;
-        }
+        
         #segment-5{
             background: url(img/contact.jpg);
             background-attachment: fixed;
@@ -44,10 +38,10 @@
         }
         .material-icons{
             font-size: 35px;
-            
         }
         .col-md-4:hover .material-icons{
-            box-shadow: 0px 10px 6px -6px white;
+            border: 1px solid white;
+            border-radius: 50%
         }
         .fa{
             font-size: 25px;
@@ -58,25 +52,30 @@
         #segment-5 .heading{
             margin-bottom: 10vh;
         }
+        #segment-5 .material-icons{
+            padding: 10px;
+        }
         #segment-5 .heading + div{
             color: white;
             font-size: 1em;
             display: table;
             margin: auto;
             text-align: center;
-            margin-bottom: 10vh;
+            margin-bottom: 5vh;
+            border: 1px solid white;
+            padding:5vh;
+            padding-left: 10vw;
+            padding-right: 10vw;
+            border-radius: 5px;
         }
         
         
         
-        
-        #segment-4 .material-icons{
+        #segment-4-2 .material-icons{
             font-size: 30px;
         }
         
-        button:hover {
-            box-shadow: 0px 10px 6px -6px grey;
-        }
+        
         .cards{
             display:none;
             width: 80vw;
@@ -91,13 +90,10 @@
         }
         
         #slides{
-            margin-top: 40px;
-            margin-bottom: 60px;
+            margin-top: 80px;
+            margin-bottom: 40px;
         }
-        #segment-4 .heading{
-            margin-top: 60px;
-            color: gray;
-        }
+        
         #left-control, #right-control{
             background: none;
             margin-bottom: 80px;
@@ -110,7 +106,9 @@
             color: grey;
         }
         #left-control:hover, #right-control:hover{
-            box-shadow: 0px 10px 6px -6px grey;
+            box-shadow: 0px 0px 5px 5px lightgrey;
+            background: grey;
+            color: white;
             border: 2px solid white;
         }
         #left-control{
@@ -350,47 +348,121 @@
         
         <div class="container-fluid" id="segment-3">
             <div class="row">
-              <div class="triangle-topright"></div>
-                <div id="segment-3-text">
+                <div class="triangle-topright"></div>
+                <div class="heading-border">
                     <div class="heading">
-                        <span>TURNING POINTS</span>
-                    </div>
-                    <div id="segment-3-content">
-                        <div>
-                            <b>2017</b>
-                            <hr style="width: 30%;">
-                            <span>Currently I am a Project Assistant(P.A.) in Network & System Administration Department.</span>
-                            <br>
-                            <span>
-                            I got chance to do internship  for two months in my institute.
-                            </span>
-                        </div>
-                        <div>
-                            <b>2016</b>
-                            <hr style="width: 30%;">
-                            <span>I was assigned the role of a Teaching Assistant(T.A.).</span>
-                        </div>
-                        <div>
-                            <b>2015</b>
-                            <hr style="width: 30%;">
-                            <span>Joined CSE branch in Indian Institute of Information Technology, Sri City.</span>
-                            <br>
-                            <span>I cracked JEE(Main & Advanced).</span>
-                        </div>
-                        <div>
-                            <b>2014</b>
-                            <hr style="width: 30%;">
-                            <span>Completed HSC from Loyola High School, Patna</span>
-                        </div>
-                        <div>
-                            <b>2012</b>
-                            <hr style="width: 30%;">
-                            <span>Completed SSC from Chapra Central School, Chapra</span>
-                        </div>
+                        <span>Turning</span><span>POINTS</span>
                     </div>
                 </div>
-                
                 <div class="triangle-bottomleft"></div>
+            </div>
+        </div>
+
+
+        <div class="container-fluid" id="segment-3-2">
+            <div class="row">
+                <div class="col-md-12">
+                    <button class="small-box">2018</button>
+                    <div style="border: 1px solid #0c71a3; width:1px; height:15%; margin-left:50%;"></div>
+                    <div class="large-box">
+                        <dl>
+                          <dd>January - April</dd>
+                          <dd><hr><dd>
+                          <dt>Project Assistant</dt>
+                          <dd>Network & System Administration Department</dd>
+                          <dd>IIIT-Sri City</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div style="border: 1px solid #0c71a3; width:1px; height:5%; margin-left:50%;"></div>
+                    <button class="small-box">2017</button>
+                    <div style="border: 1px solid #0c71a3; width:1px; height:15%; margin-left:50%;"></div>
+                    <div class="large-box">
+                        <dl>
+                          <dd>August - November</dd>
+                          <dd><hr><dd>
+                          <dt>Project Assistant</dt>
+                          <dd>Network & System Administration Department</dd>
+                          <dd>IIIT-Sri City</dd>
+                        </dl>
+                        <dl>
+                          <dd>May - June</dd>
+                          <dd><hr><dd>
+                          <dt>Internship</dt>
+                          <dd>Web Development and Automation Tool Development</dd>
+                          <dd>IIIT-Sri City</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div style="border: 1px solid #0c71a3; width:1px; height:auto; margin-left:50%;"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div style="border: 1px solid #0c71a3; width:1px; height:5%; margin-left:50%;"></div>
+                    <button class="small-box">2016</button>
+                    <div style="border: 1px solid #0c71a3; width:1px; height:15%; margin-left:50%;"></div>
+                    <div class="large-box">
+                        <dl>
+                          <dd>August - November</dd>
+                          <dd><hr><dd>
+                          <dt>Teaching Assistant</dt>
+                          <dd>Information Technology Work Shop(ITWS)-1</dd>
+                          <dd>IIIT-Sri City</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div style="border: 1px solid #0c71a3; width:1px; height:5%; margin-left:50%;"></div>
+                    <button class="small-box">2015</button>
+                    <div style="border: 1px solid #0c71a3; width:1px; height:15%; margin-left:50%;"></div>
+                    <div class="large-box">
+                        <dl>
+                          <dd>August - in progress</dd>
+                          <dd><hr><dd>
+                          <dt>B.Tech</dt>
+                          <dd>Computer Science and Engineering</dd>
+                          <dd>IIIT-Sri City</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div style="border: 1px solid #0c71a3; width:1px; height:auto; margin-left:50%;"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div style="border: 1px solid #0c71a3; width:1px; height:5%; margin-left:50%;"></div>
+                    <button class="small-box">2014</button>
+                    <div style="border: 1px solid #0c71a3; width:1px; height:15%; margin-left:50%;"></div>
+                    <div class="large-box">
+                        <dl>
+                          <dd>May</dd>
+                          <dd><hr><dd>
+                          <dt>All India Senior School Certificate Examination(AISSCE)</dt>
+                          <dd>Loyola High School, Patna</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div style="border: 1px solid #0c71a3; width:1px; height:auto; margin-left:50%;"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div style="border: 1px solid #0c71a3; width:1px; height:5%; margin-left:50%;"></div>
+                    <button class="small-box">2012</button>
+                    <div style="border: 1px solid #0c71a3; width:1px; height:15%; margin-left:50%;"></div>
+                    <div class="large-box">
+                        <dl>
+                          <dd>March</dd>
+                          <dd><hr><dd>
+                          <dt>All India Secondary School Examination(AISSE)</dt>
+                          <dd>Chhapra Central School, Chhapra</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div style="border: 1px solid #0c71a3; width:1px; height:auto; margin-left:50%;"></div>
             </div>
         </div>
         
@@ -400,14 +472,20 @@
         
         
         <div class="container-fluid" id="segment-4">
-            <div class="row" style="min-height: 60vh;">   
-                <div style="text-align: center;">
+            <div class="row" >
+                <div class="triangle-topleft"></div>   
+                <div class="heading-border">
                     <div class="heading">
-                        <span>WHAT OTHERS SAY</span>
+                            <span>What</span><span> OTHERS SAY</span>
                     </div>
-                    <div style="margin-top: 40px; background-color: lightgrey; height: 1px; width: 30%;display: inline-block;"></div>
+                </div>
+                <div class="triangle-bottomright"></div>
+            </div>
+        </div>
+
+        <div class="container-fluid" id="segment-4-2">
+            <div class="row">
                     <div id="slides">
-                        
                          <div class="cards">
                             <div>This is a sample text. This is a sample text. This is a sample text. This is a sample text. This is a sample text. This is a sample text. This is a sample text.This is a sample text. <br><br>- This is a sample 
                             text.</div>
@@ -434,7 +512,6 @@
                         
                     </div>
                     <button id="left-control" onclick="plusSlides(-1)"><i class="material-icons">keyboard_arrow_left</i></button><button id="right-control" onclick="plusSlides(1)"><i class="material-icons">keyboard_arrow_right</i></button>
-                </div>
                 <script>
                     var slideIndex = 1;
                     showSlides(slideIndex);
@@ -472,13 +549,13 @@
             <div class="row">
                 <div class="triangle-topleft"></div>
                 <div class="heading">
-                    <span>GET IN TOUCH</span>
+                    <span>Get</span><span> IN TOUCH</span>
                 </div>
                 <div>
                     It was an "Awesome" journey. Wasn't it?<br>
 						So ping me if you want to get more details.
                 </div>
-                <hr style="width:60%;">
+                <!--<hr style="width:60%;">-->
                 <br>
                 <br>
                 <div class="col-md-4">
