@@ -13,6 +13,10 @@
             font-family: test;
             src: url('../font/BackToBlackBoldDemo.ttf');
         }
+        @font-face {
+            font-family: segment1;
+            src: url('../font/TEXWORK.ttf');
+        }
         .heading{
             margin: auto;
             display: table;
@@ -38,6 +42,25 @@
             border-right: 98vw solid transparent;
             margin-bottom: 5vh;
         }
+        .triangle-bottomleft-half{
+            display: inline-block;
+            float: left;
+            width: 0;
+            height: 0;
+            margin-bottom: -2px;
+            border-bottom: 25vh solid white;
+            border-right: 49vw solid transparent;
+        }
+        .triangle-bottomright-half{
+            display: inline-block;
+            margin-bottom: -2px;
+            float: right;
+            width: 0;
+            height: 0;
+            float: right;
+            border-bottom: 25vh solid white;
+            border-left: 49vw solid transparent;
+        }
         .triangle-bottomright {
             margin-bottom: -1px;
             height: 0;
@@ -45,16 +68,14 @@
             border-bottom: 25vh solid white;
             border-left: 98vw solid transparent;
         }  
-
+        
 
 
         #segment-1{
-            background: url('../img/top.jpg');
+            background: url('../img/top1.jpg');
             background-size: cover;
             background-position: center;
-        }
-        #segment-1 .row{
-            padding: 3vh 3vw 3vh 3vw;
+            background-repeat: no-repeat;
         }
         #quote-text{
             margin-right: 2.5vw;
@@ -198,10 +219,12 @@
             box-shadow: 0px 0px 10px 2px #0c71a3;
         }
         #segment-3-2 .large-box{
+            color: white;
             display: inline-block;
             font-size: 1.2em;
             padding:20px; 
             border:2px solid #0c71a3;
+            background: rgba(12,113,163,1);
            
         }
         
@@ -232,3 +255,238 @@
             border:2px solid rgba(111, 122, 137,0.7); 
             display: inline-block;
         }
+
+
+ #segment-5{
+            background: url('../img/contact.jpg');
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+        }
+        #segment-5 .row{
+            
+            background: linear-gradient(to left, rgba(111, 122, 137,0.9) , rgba(12,113,163,0.9));
+            color: white;
+        }
+        #segment-5 .col-md-4{
+            margin-top: 40px;
+            margin-bottom: 40px;
+            padding-left: 4vw;
+            padding-right: 4vw;
+            text-align: center;
+            font-size: 0.85em;
+        }
+        .material-icons{
+            font-size: 35px;
+        }
+        .col-md-4:hover .material-icons{
+            border: 1px solid white;
+            border-radius: 50%
+        }
+        .fa{
+            font-size: 25px;
+            width:25px;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+        #segment-5 .heading{
+            margin-bottom: 10vh;
+        }
+        #segment-5 .material-icons{
+            padding: 10px;
+        }
+        #segment-5 .heading + div{
+            color: white;
+            font-size: 1em;
+            display: table;
+            margin: auto;
+            text-align: center;
+            margin-bottom: 5vh;
+            border: 1px solid white;
+            padding:5vh;
+            padding-left: 10vw;
+            padding-right: 10vw;
+            border-radius: 5px;
+        }
+        
+        
+        
+        #segment-4-2 .material-icons{
+            font-size: 30px;
+        }
+        
+        
+        .cards{
+            display:none;
+            width: 80vw;
+            height: 150px;
+            border: 1px solid lightgrey;
+            box-shadow: 0px 10px 6px -6px grey;
+            border-radius: 2px;
+            margin: auto;
+            padding: 3vh 10vw 3vh 10vw ;
+            font-size: 0.55em;
+            
+        }
+        
+        #slides{
+            margin-top: 80px;
+            margin-bottom: 40px;
+        }
+        
+        #left-control, #right-control{
+            background: none;
+            margin-bottom: 80px;
+            border: 2px solid  grey;
+            min-height: 40pxfont-family: wildyouth;
+            font-weight: bold;;
+            height: 45px;
+            width: 45px;
+            border-radius: 50%;
+            color: grey;
+        }
+        #left-control:hover, #right-control:hover{
+            box-shadow: 0px 0px 5px 5px lightgrey;
+            background: grey;
+            color: white;
+            border: 2px solid white;
+        }
+        #left-control{
+            margin-right: 5vw;
+        }
+        
+        
+        @media screen and (min-width: 500px) {
+            .cards{
+                 width:65vw;
+                 font-size: 0.6em;
+                height: 160px;
+            }
+            .heading{
+                font-size: 1.5em;
+            }
+            #segment-3-content div{
+                font-size: 1.1em;
+            }
+            #segment-3-content span{
+                font-size: 0.8em;
+            }
+            #segment-2 .row{
+               font-size: 0.9em;
+            }
+            table{
+                font-size: 0.9em;
+            }
+            #segment-5 .heading + div{
+                font-size: 1.15em;
+            }
+           
+        }
+        @media screen and (min-width: 750px) {
+            .cards{
+                 width:60vw;
+                font-size: 0.65em;
+                height: 170px;
+            }
+            .heading{
+                font-size: 1.6em;
+            }
+            #segment-3-content div{
+                font-size: 1.2em;
+            }
+            #segment-3-content span{
+                font-size: 0.85em;
+            }
+            #segment-2 .row{
+               font-size: 0.95em;
+            }
+            table{
+                font-size: 0.9em;
+            }
+            #segment-2 img{
+                width:125px;
+            }
+            #quote-text{
+                text-align: center;
+                float: none;
+                font-size: 1.2em;
+            }
+            #segment-5 .heading + div{
+                font-size: 1.25em;
+            }
+            #segment-1{
+                background: url('../img/top.jpg');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        }
+
+        @media screen and (min-width: 950px) {
+            .cards{
+                 width:55vw;
+                font-size: 0.7em;
+                height: 180px;
+            }
+            .heading{
+                font-size: 1.75em;
+            }
+            #segment-3-content div{
+                font-size: 1.3em;
+            }
+            #segment-3-content span{
+                font-size: 0.9em;
+            }
+            #segment-2 .row{
+               font-size: 1em;
+            }
+            table{
+                font-size: 1.0em;
+            }
+            #quote-text{
+                text-align: left;
+                float: right;
+                font-size: 1.3em;
+            }
+            #segment-5 .heading + div{
+                font-size: 1.35em;
+            }
+            
+        }
+
+        @media screen and (min-width: 1200px) {
+            .cards{
+                width:55vw;
+                font-size: 0.8em;
+                height: 190px;
+            }
+            .heading{
+                font-size: 2em;
+            }
+            #segment-3-content div{
+                font-size: 1.5em;
+            }
+            #segment-3-content span{
+                font-size: 0.9em;
+            }
+            #segment-5 .col-md-4{
+                font-size: 1em;
+            }
+            .material-icons{
+                font-size: 40px;
+            }
+            #segment-2 .row{
+               font-size: 1.05em;
+            }
+            table{
+                font-size: 1.0em;
+            }
+            #segment-2 img{
+                width:140px;
+            }
+            #segment-5 .heading + div{
+                font-size: 1.5em;
+            }
+            
+        }
+        
