@@ -90,8 +90,15 @@
             border-bottom: 25vh solid white;
             border-left: 49vw solid transparent;
         }
-        
-        
+        .material-icons{
+            font-size: 35px;
+        }
+        .fa{
+            font-size: 25px;
+            width:25px;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
 
 
         #segment-1{
@@ -260,7 +267,7 @@
         }
 
 
- #segment-5{
+        #segment-5{
             background: url('../img/contact.jpg');
             background-attachment: fixed;
             background-size: cover;
@@ -279,18 +286,10 @@
             text-align: center;
             font-size: 0.85em;
         }
-        .material-icons{
-            font-size: 35px;
-        }
+        
         .col-md-4:hover .material-icons{
             border: 1px solid white;
             border-radius: 50%
-        }
-        .fa{
-            font-size: 25px;
-            width:25px;
-            border-radius: 50%;
-            margin-right: 5px;
         }
         #segment-5 .heading{
             margin-bottom: 10vh;
@@ -368,12 +367,6 @@
             .heading{
                 font-size: 1.5em;
             }
-            #segment-3-content div{
-                font-size: 1.1em;
-            }
-            #segment-3-content span{
-                font-size: 0.8em;
-            }
             #segment-2 .row{
                font-size: 0.9em;
             }
@@ -393,12 +386,6 @@
             }
             .heading{
                 font-size: 1.6em;
-            }
-            #segment-3-content div{
-                font-size: 1.2em;
-            }
-            #segment-3-content span{
-                font-size: 0.85em;
             }
             #segment-2 .row{
                font-size: 0.95em;
@@ -434,12 +421,6 @@
             .heading{
                 font-size: 1.75em;
             }
-            #segment-3-content div{
-                font-size: 1.3em;
-            }
-            #segment-3-content span{
-                font-size: 0.9em;
-            }
             #segment-2 .row{
                font-size: 1em;
             }
@@ -465,12 +446,6 @@
             }
             .heading{
                 font-size: 2em;
-            }
-            #segment-3-content div{
-                font-size: 1.5em;
-            }
-            #segment-3-content span{
-                font-size: 0.9em;
             }
             #segment-5 .col-md-4{
                 font-size: 1em;
