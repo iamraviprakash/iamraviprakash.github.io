@@ -14,8 +14,15 @@
             src: url('../font/BackToBlackBoldDemo.ttf');
         }
         @font-face {
-            font-family: segment1;
+            font-family: logo;
             src: url('../font/TEXWORK.ttf');
+        }
+        .logo{
+            font-size:4em;
+            display:inline; 
+            padding: 0 5px 5px 5px; 
+            color:rgba(12,113,163,0.9); 
+            font-family: logo;
         }
         .heading{
             margin: auto;
@@ -42,6 +49,28 @@
             border-right: 98vw solid transparent;
             margin-bottom: 5vh;
         }
+        .triangle-topright{
+            margin-top: -2px;
+            width: 0;
+            height: 0;
+            float: right;
+            border-top: 25vh solid white;
+            border-left: 98vw solid transparent;
+        }
+        .triangle-bottomleft {
+            margin-bottom: -1px;
+            height: 0;
+            float: left;
+            border-bottom: 25vh solid white;
+            border-right: 98vw solid transparent;
+        }
+        .triangle-bottomright {
+            margin-bottom: -1px;
+            height: 0;
+            float: right;
+            border-bottom: 25vh solid white;
+            border-left: 98vw solid transparent;
+        }  
         .triangle-bottomleft-half{
             display: inline-block;
             float: left;
@@ -61,13 +90,7 @@
             border-bottom: 25vh solid white;
             border-left: 49vw solid transparent;
         }
-        .triangle-bottomright {
-            margin-bottom: -1px;
-            height: 0;
-            float: right;
-            border-bottom: 25vh solid white;
-            border-left: 98vw solid transparent;
-        }  
+        
         
 
 
@@ -76,6 +99,11 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
+        }
+        #segment-1 .row div:nth-child(1){
+            min-height:70vh; 
+            text-align:left; 
+            padding: 5vh 5vw 5vh 5vw;
         }
         #quote-text{
             margin-right: 2.5vw;
@@ -171,35 +199,6 @@
             background-position: center;
             color: white;
         }
-        #segment-3-content{
-            margin-top: 50px;
-            width: 100%;
-        }
-        #segment-3-content div{
-            padding: 10px;
-            text-align: center;
-            font-weight: normal;
-            margin-bottom: 30px;
-            font-size: 1em;
-        }
-        #segment-3-content span{
-            font-size: 0.8em;
-        }
-        #segment-3 .triangle-topright{
-            margin-top: -2px;
-            width: 0;
-            height: 0;
-            float: right;
-            border-top: 25vh solid white;
-            border-left: 98vw solid transparent;
-        }
-        #segment-3 .triangle-bottomleft {
-            margin-bottom: -1px;
-            height: 0;
-            float: left;
-            border-bottom: 25vh solid white;
-            border-right: 98vw solid transparent;
-        }
         #segment-3-2{
             color: #0c71a3;
             margin-top: 50px;
@@ -216,16 +215,16 @@
             color: white;
             background: #0c71a3;
             border-radius: 50%;
-            box-shadow: 0px 0px 10px 2px #0c71a3;
+            box-shadow: 0px 0px 50px 1px grey;
         }
         #segment-3-2 .large-box{
             color: white;
             display: inline-block;
             font-size: 1.2em;
             padding:20px; 
-            border:2px solid #0c71a3;
+            border:2px solid white;
             background: rgba(12,113,163,1);
-           
+            box-shadow: 0px 0px 50px 2px grey;
         }
         
         
