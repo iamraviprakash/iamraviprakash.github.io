@@ -204,6 +204,10 @@
             margin-top: 50px;
             margin-bottom: 50px;
             text-align: center;
+            background: url('../img/test.png');
+            background-repeat: no-repeat;
+            background-position: center;
+
         }
         #segment-3-2 .small-box{
             display: table;
