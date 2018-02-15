@@ -1,3 +1,11 @@
+        :root{
+            --primary-color: #0c71a3;
+            --secondary-color: #0a6592;
+            --primary-color-rgba: rgba(12,113,163,0.9);
+        }
+
+
+
         #segment-4, #segment-5, #segment-2, #segment-3{
             font-family: 'Open Sans Condensed', sans-serif;
             font-size: 1.4em;
@@ -21,7 +29,7 @@
             font-size:4em;
             display:inline; 
             padding: 0 5px 5px 5px; 
-            color:rgba(12,113,163,0.9); 
+            color: var(--primary-color); 
             font-family: logo;
         }
         .heading{
@@ -112,25 +120,6 @@
             text-align:left; 
             padding: 5vh 5vw 5vh 5vw;
         }
-        #quote-text{
-            margin-right: 2.5vw;
-            margin-top: 5vh;
-            color: #F8F8F8;
-            font-family: 'Raleway', sans-serif;
-            font-family: wildyouth;
-            padding:5px; 
-            background: linear-gradient(to left, rgba(111, 122, 137,0.5) , rgba(12,113,163,0.5));
-        }
-        #quote-text #part-1{
-            font-size: 3em;
-            font-weight: bold;
-        }
-        #quote-text #part-2{
-            font-size: 4em;
-        }
-        #quote-text #part-3{
-            font-size: 1.5em;
-        }
 
 
 
@@ -164,9 +153,9 @@
             font-size: 0.8em;
         }
         table button{
-            border: 2px solid #0c71a3;
+            border: 2px solid var(--primary-color);
             background: white;
-            color: #0c71a3;
+            color: var(--primary-color);
             width:200px;
             border-radius: 2px;
             height: 40px;
@@ -176,7 +165,7 @@
         }
         button:hover {
             border-width: 0px;
-            background: #0c71a3;
+            background: var(--primary-color);
             color: white;
             box-shadow: 0px 10px 6px -6px lightgrey;
         }
@@ -207,14 +196,13 @@
             color: white;
         }
         #segment-3-2{
-            color: #0c71a3;
+            color: var(--primary-color);
             margin-top: 50px;
             margin-bottom: 50px;
             text-align: center;
             background: url('../img/segment3.2.png');
             background-repeat: no-repeat;
             background-position: center;
-
         }
         #segment-3-2 .small-box{
             display: table;
@@ -224,9 +212,9 @@
             width: 80px; 
             border:2px solid white;
             color: white;
-            background: #0c71a3;
+            background: var(--primary-color);
             border-radius: 50%;
-            box-shadow: 0px 0px 50px 1px grey;
+            box-shadow: 0px 0px 50px 1px #404040;
         }
         #segment-3-2 .large-box{
             color: white;
@@ -234,10 +222,11 @@
             font-size: 1.2em;
             padding:20px; 
             border:2px solid white;
-            background: rgba(12,113,163,1);
-            box-shadow: 0px 0px 50px 2px grey;
+            background: var(--secondary-color);
+            box-shadow: 0px 0px 50px 2px #404040;
         }
         
+
         
         
 
@@ -255,16 +244,18 @@
         }
 
         #segment-3 .heading, #segment-4 .heading{
-            background: linear-gradient(to left, rgba(111, 122, 137,0.7) , rgba(12,113,163,0.7));
+            background: var(--primary-color-rgba);
         }
         #segment-3 .row, #segment-4 .row{
             text-align: center;
         }
         .heading-border{
             padding:10px; 
-            border:2px solid rgba(111, 122, 137,0.7); 
+            border:2px solid var(--primary-color); 
             display: inline-block;
         }
+        
+
 
 
         #segment-5{
@@ -275,7 +266,7 @@
         }
         #segment-5 .row{
             
-            background: linear-gradient(to left, rgba(111, 122, 137,0.9) , rgba(12,113,163,0.9));
+            background: var(--primary-color-rgba);
             color: white;
         }
         #segment-5 .col-md-4{
@@ -312,7 +303,10 @@
         }
         
         
-        
+
+
+
+
         #segment-4-2 .material-icons{
             font-size: 30px;
         }
@@ -321,16 +315,16 @@
         .cards{
             display:none;
             width: 80vw;
-            height: 150px;
-            border: 1px solid lightgrey;
-            box-shadow: 0px 10px 6px -6px grey;
+            border: 1px solid grey;
+            box-shadow: 0px 0 15px 2px lightgrey;
             border-radius: 2px;
-            margin: auto;
-            padding: 3vh 10vw 3vh 10vw ;
-            font-size: 0.55em;
-            
+            padding: auto;
+            font-size: 0.55em; 
         }
-        
+        .cards div{
+            margin: 10px;
+        }
+
         #slides{
             margin-top: 80px;
             margin-bottom: 40px;
@@ -357,6 +351,20 @@
             margin-right: 5vw;
         }
         
+
+
+
+
+        .footer{
+            width:100%; 
+            background: var(--secondary-color);
+            padding: 5vh;
+            color: white;
+            text-align: center;
+        }
+        .footer > span{
+            padding: 5px;
+        }
         
         @media screen and (min-width: 500px) {
             .cards{
@@ -416,7 +424,7 @@
             .cards{
                  width:55vw;
                 font-size: 0.7em;
-                height: 180px;
+                
             }
             .heading{
                 font-size: 1.75em;
@@ -442,7 +450,6 @@
             .cards{
                 width:55vw;
                 font-size: 0.8em;
-                height: 190px;
             }
             .heading{
                 font-size: 2em;
