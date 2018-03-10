@@ -197,8 +197,8 @@
             margin-top: 50px;
             margin-bottom: 50px;
             text-align: center;
-            background: url('../img/segment3.2.png');
-            background-repeat: no-repeat;
+            background: url('../img/segment3.2.3.jpg');
+            
             background-position: center;
         }
         #segment-3-2 .small-box{
@@ -211,7 +211,7 @@
             color: white;
             background: var(--secondary-color);
             border-radius: 50%;
-            box-shadow: 0px 0px 50px 1px #404040;
+            box-shadow: 0px 0px 10px 1px #707070;
             
         }
         #segment-3-2 .large-box{
@@ -221,7 +221,7 @@
             padding:20px; 
             border:2px solid white;
             background: var(--primary-color);
-            box-shadow: 0px 0px 50px 2px #404040, 0px 0px 50px 1px var(--secondary-color) inset;
+            box-shadow: 0px 0px 10px 1px #707070, 0px 0px 10px 1px var(--secondary-color) inset;
         }
         .small-stick, .large-stick{
             border: 1px solid #0c71a3; 
