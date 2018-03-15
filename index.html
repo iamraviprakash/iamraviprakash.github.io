@@ -19,20 +19,25 @@
         <!--segment-1 main-page -->
         <div class="container-fluid" id="segment-1">
             <div class="row">
-                <div>
+                <div class="first-half">
                   <div class="logo">.prk</div>
                 </div>
-                </div>
+
                 <!-- Second half-->
+              <!--
                 <div class="triangle-bottomright-half"></div>
                 <div class="triangle-bottomleft-half"></div>
+              -->
+              <div class="second-half">
+                <div class="triangle-bottomright"></div>
+              </div>
             </div>
         </div>
-        
-        
+
+
         <!-- segment-2 about me -->
-        
-        
+
+
         <div class="container-fluid" id="segment-2">
             <div class="row">
                 <div id="image-section">
@@ -45,37 +50,37 @@
                     <table>
                         <tr>
                             <td>
-                                <b>Education</b>  
+                                <b>Education</b>
                             </td>
                             <td>
                             B.Tech(Hons) Computer Sc. & Engg (2015-2019)
                             </td>
-                        </tr>   
+                        </tr>
                         <tr>
                             <td>
-                                <b>Institution</b>  
+                                <b>Institution</b>
                             </td>
                             <td>
                            Indian Institute of Information Technology, Sri City
                             </td>
-                        </tr>    
+                        </tr>
                         <tr >
                             <td>
-                                <b>Skills</b>  
+                                <b>Skills</b>
                             </td>
                             <td>
                             Python, HTML5, CSS3, JavaScript, PHP & more
                             </td>
-                        </tr>   
+                        </tr>
                         <tr >
                             <td>
-                                <b>Find More On</b>  
+                                <b>Find More On</b>
                             </td>
                             <td>
                             <a href="https://angel.co/iamraviprakash" class="fa fa-angellist"></a>
                             <a href="https://github.com/iamraviprakash" class="fa fa-github"></a> <a href="https://www.linkedin.com/in/ravi-prakash-a80014136/" class="fa fa-linkedin"></a> <a href="https://www.facebook.com/ravi.prakash.1829" class="fa fa-facebook"></a><a href="https://www.instagram.com/prk.ravi" class="fa fa-instagram"></a>
                             </td>
-                        </tr>  
+                        </tr>
                         <tr>
                             <td colspan="2" style="text-align: center;">
                                 <br><a href="resume.pdf"><button>GET MY RESUME</button></a>
@@ -85,7 +90,7 @@
                     </div>
                     <div class="col-md-6">
                         <p>
-                            Hi. I'm 20 years old, born and raised in Bihar, India. In these 20 years, I realized that everything is impossible until we try. And it also made me believe that at the end of the day everything is in your favor. 
+                            Hi. I'm 20 years old, born and raised in Bihar, India. In these 20 years, I realized that everything is impossible until we try. And it also made me believe that at the end of the day everything is in your favor.
                             <br>
                             <br>
                             As Gita says -
@@ -103,20 +108,21 @@
                     </div>
             </div>
         </div>
-        
-        
+
+
+
         <!-- segment-3 Experiences -->
-        
-        
+
+
         <div class="container-fluid" id="segment-3">
             <div class="row">
-                <div class="triangle-topright"></div>
-                <div class="heading-border">
-                    <div class="heading">
-                        <span>Turning</span><span>POINTS</span>
-                    </div>
-                </div>
-                <div class="triangle-bottomleft"></div>
+              <div class="triangle-topright"></div>
+              <div class="heading-border">
+                  <div class="heading">
+                      <span>Turning</span><span>POINTS</span>
+                  </div>
+              </div>
+              <div class="triangle-bottomleft"></div>
             </div>
         </div>
 
@@ -230,15 +236,14 @@
                 </div>
             </div>
         </div>
-        
-        
+
         <!-- segment-4 Projects -->
-        
-        
-        
+
+
+
         <div class="container-fluid" id="segment-4">
             <div class="row" >
-                <div class="triangle-topleft"></div>   
+                <div class="triangle-topleft"></div>
                 <div class="heading-border">
                     <div class="heading">
                             <span>Others</span><span>SAY</span>
@@ -248,11 +253,12 @@
             </div>
         </div>
 
+
         <div class="container-fluid" id="segment-4-2">
             <div class="row">
                     <div id="slides">
                          <div class="cards">
-                            <div>This is a sample text. This is a sample text. This is a sample text. This is a sample text. This is a sample text. This is a sample text. This is a sample text.This is a sample text. 
+                            <div>This is a sample text. This is a sample text. This is a sample text. This is a sample text. This is a sample text. This is a sample text. This is a sample text.This is a sample text.
                             </div>
                             <div style="display: inline-block;">
                               <img src="img/user.png" width="50">
@@ -260,16 +266,16 @@
                               - This is a sample text.
                             </div>
                          </div>
-                        
+
                          <div class="cards">
-                            <div>This is a sample text. This is a sample text. This is a sample text. This is a sample text. This is a sample text. This is a sample text. This is a sample text.This is a sample text. 
+                            <div>This is a sample text. This is a sample text. This is a sample text. This is a sample text. This is a sample text. This is a sample text. This is a sample text.This is a sample text.
                             </div>
                             <div style="display: inline-block;">
                               <img src="img/user.png" width="40">
                               - This is a sample text.
                             </div>
                          </div>
-                        
+
                     </div>
                     <button id="left-control" onclick="plusSlides(-1)"><i class="material-icons">keyboard_arrow_left</i></button><button id="right-control" onclick="plusSlides(1)"><i class="material-icons">keyboard_arrow_right</i></button>
                 <script>
@@ -287,24 +293,24 @@
                     function showSlides(n) {
                       var i;
                       var slides = document.getElementsByClassName("cards");
-                      if (n > slides.length) {slideIndex = 1}    
+                      if (n > slides.length) {slideIndex = 1}
                       if (n < 1) {slideIndex = slides.length}
                       for (i = 0; i < slides.length; i++) {
-                          slides[i].style.display = "none";  
+                          slides[i].style.display = "none";
                       }
-                      slides[slideIndex-1].style.display = "inline-block";  
+                      slides[slideIndex-1].style.display = "inline-block";
                     }
                 </script>
 
             </div>
         </div>
-        
-        
-        
+
+
+
         <!-- segment-5 Contact -->
-        
-        
-        
+
+
+
         <div class="container-fluid" id="segment-5">
             <div class="row">
                 <div class="triangle-topleft"></div>
@@ -315,7 +321,7 @@
                     It was an "Awesome" journey, wasn't it?<br>
 						So ping me if you want to know more.
                 </div>
-                <!--<hr style="width:60%;">-->
+
                 <br>
                 <br>
                 <div class="col-md-4">
@@ -341,7 +347,7 @@
                     raviprakash.prince@gmail.com
                 </div>
             </div>
-            
+
         </div>
         <div class="container-fluid">
             <div class="row">
@@ -350,5 +356,7 @@
               </div>
             </div>
         </div>
+
+      
     </body>
 </html>
